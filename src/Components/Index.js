@@ -5,9 +5,6 @@ import React, { Component } from 'react';
 import "./Style.css";
 
 
-// Behaviour components.
-
-import Window from '../Window';
 
 // Components.
 import Folders from "../Utilities/Components/Folders";
@@ -41,12 +38,11 @@ class Components extends Component {
         let props = this.props;
         let state = this.state;
         return (
-            <Window>
                 <div className="container elements-tab">
-                    <div className="title">
+                    <div>
                         Components
                     </div>
-                    <div className="Controls">
+                    <div >
                         <button onClick={this.addComponent.bind(this)}><i className="fa fa-edit"></i>{props.selectedComponent ? "Edit" : "Add"}</button>
                         <button onClick={this.addFolder.bind(this)}><i className="fa fa-folder"></i>Folder</button>
                     </div>
@@ -61,7 +57,6 @@ class Components extends Component {
                         />
                     </div>
                 </div>
-            </Window>
         );
     }
 }

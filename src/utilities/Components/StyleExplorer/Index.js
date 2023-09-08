@@ -60,8 +60,8 @@ class StyleExplorer extends Component {
 
         let rules = this.state.rules.map((rule,index)=><Rule key={Math.ceil(Math.random() * 1000)} index={index} rule={rule} onUpdate={this.ruleUpdate.bind(this)} />);
         return (
-            <div className="container">
-                <div className="title">StyleExplorer                
+            <div>
+                <div >StyleExplorer                
                     <button onClick={this.addRule.bind(this)}>+</button>
                 </div>
                 {rules}

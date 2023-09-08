@@ -62,7 +62,7 @@ class Reducer extends Component {
                         }}
                     />
                 </div>
-                <div className="title">
+                <div >
                     Publishes
                 </div>
                 <div>

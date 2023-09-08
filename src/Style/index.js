@@ -3,9 +3,6 @@
 
 import React, { Component } from 'react';
 
-import Window from "../Window";
-
-
 import {UnControlled as CodeMirror} from 'react-codemirror2';
 
 class Style extends Component {
@@ -23,10 +20,9 @@ class Style extends Component {
 
         // TODO: Should pass the current data. Instead of accessing it from global
         return (
-            <Window>
             <div className="container editor-tab">
                     <div className="editor css">
-                        <div className="title">Component CSS</div>
+                        <div >Component CSS</div>
                         <CodeMirror
                             autoCursor={false}
                             value={style}
@@ -46,7 +42,6 @@ class Style extends Component {
                         />
                 </div>
             </div>
-            </Window>
         );
     }
 }

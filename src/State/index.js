@@ -4,8 +4,6 @@
 import React, { Component } from 'react';
 
 
-import Window from "../Window";
-
 import {UnControlled as CodeMirror} from 'react-codemirror2';
 
 class State extends Component {
@@ -20,7 +18,6 @@ class State extends Component {
         let state = this.state.state;
         // TODO: Should pass the current data. Instead of accessing it from global
         return (
-            <Window>
             <div className="container editor-tab">
                     <div className="editor state">
                         <div className="title">Component State</div>
@@ -43,7 +40,6 @@ class State extends Component {
                         />
                 </div>
             </div>
-            </Window>
         );
     }
 }

@@ -32,7 +32,7 @@ class Tags extends Component {
         if (nodeTree.result === undefined ) {
             return (
                 <ul className="container events-tab">
-                    <div className="title">Events</div>
+                    <div >Events</div>
                 </ul>
             );
         }
@@ -41,7 +41,7 @@ class Tags extends Component {
         return (
 
             <div>
-                <div className="title">
+                <div >
                     Tags
                 </div>
                 <div className="tags">

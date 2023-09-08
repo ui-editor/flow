@@ -4,7 +4,6 @@
 import React, { Component } from 'react';
 
 
-import Window from "../Window";
 
 class Preview extends Component {
     constructor(props) {
@@ -19,10 +18,8 @@ class Preview extends Component {
 
         // TODO: Should pass the current data. Instead of accessing it from global
         return (
-            <Window>
                 <div className="container editor-tab">
                 </div>
-            </Window>
         );
     }
 }

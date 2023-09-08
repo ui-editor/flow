@@ -14,7 +14,6 @@ import {buildJSX} from "../utilities/CodeGenerator/JSX";
 // Components
 
 import Div from "./Div";
-import Window from "../Window"
 
 // Styles.
 
@@ -77,7 +76,6 @@ class Builder extends Component {
          * 4. Interact - Helps to preview the changes.
          */
         return (
-            <Window>
         <div className="builder">
             <div className="toolBar">
                 <button className={this.state.builderMode==="Draw"?"mode":""} onClick={this.changeMode.bind(this)}><i class="fas fa-pen"></i>Draw</button>
@@ -97,7 +95,6 @@ class Builder extends Component {
                     onSelection={this.DivonUpdate.bind(this)}>
             </Div>
         </div>
-        </Window>
         )
     }
 

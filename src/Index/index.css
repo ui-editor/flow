@@ -5,23 +5,10 @@ body {
     margin: 0px;
 }
 
-li , label, p, .rules , input, textarea{
-    font-size: 9px;
-}
 
-input, textarea { 
-    background: #2b2b2b;
-    color: #d9d9d9;
-    opacity: 0.75;
-    vertical-align: bottom;
-}
 
 input[type="text"] {
-    -webkit-appearance: textarea;
     color: rgba(255,255,255,0.5);
-    border-color: rgba(0,0,0,0.9);
-    border-width: 1px;
-    padding: 7px;
 }
 
 ul label input {

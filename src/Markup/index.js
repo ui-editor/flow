@@ -3,7 +3,6 @@
 
 import React, { Component } from 'react';
 
-import Window from "../Window";
 
 import {UnControlled as CodeMirror} from 'react-codemirror2';
 
@@ -21,10 +20,9 @@ class Markup extends Component {
         let markup= this.state.markup;
         // TODO: Should pass the current data. Instead of accessing it from global
         return (
-            <Window>
             <div className="container editor-tab">
                     <div className="editor markup">
-                        <div className="title">Component Markup</div>
+                        <div >Component Markup</div>
                         <CodeMirror
                             autoCursor={false}
                             value={markup}
@@ -44,7 +42,6 @@ class Markup extends Component {
                         />
                 </div>
             </div>
-            </Window>
         );
     }
 }

@@ -5,12 +5,6 @@
     background: rgb(43, 43, 43);
 }
 
-/* Show dark background to components */
-
-.background {
-    background: rgb(64, 64, 64);
-    border: 1px solid #333333;
-}
 
 /* Show some spacing before the component name */
 
